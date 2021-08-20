@@ -15,7 +15,10 @@
     <!--管理依赖版本号-->
     <properties>
         <mysql-connector-java-version>5.1.4</mysql-connector-java-version>
+        <spring-aop-version>4.3.16.RELEASE</spring-aop-version>
     </properties>
+
+
 
     <dependencies>
         <dependency>
@@ -29,6 +32,14 @@
             <artifactId>spring-context</artifactId>
             <version>1.0.2</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>5.2.8.RELEASE</version>
+        </dependency>
+
+
     </dependencies>
 
     <dependencyManagement>
@@ -37,6 +48,12 @@
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql-connector-java-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-aop</artifactId>
+                <version>${spring-aop-version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
